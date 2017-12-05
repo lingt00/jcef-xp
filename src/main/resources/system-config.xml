@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<browserInfo>智慧树</browserInfo>
+	<browserTitle>智慧树幼教互动云平台</browserTitle>
+	<defaultUrl>https://y2.bbtree.com</defaultUrl>
+	<defaultWidth>1200</defaultWidth>
+	<defaultHeight>800</defaultHeight>
+	<defaultSkin>default</defaultSkin>
+	<arcX>10</arcX>
+	<arcY>10</arcY>
+	<skins>
+		<skin>default</skin>
+	</skins>
+</config>

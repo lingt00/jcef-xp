@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<synth>
+	<!-- 默认全局属性 -->
+	<style id="default">
+		<font name="微软雅黑" size="14"></font>
+		<state>
+			<color value="#000000" type="FOREGROUND"></color>
+		</state>
+	</style>
+	<bind style="default" type="region" key=".*"/>
+	<!--  logo 图标 -->
+	<imageIcon id="logoSmallIcon" path="/images/logo-small.png"/>
+	<defaultsProperty key="System.smallLogo" type="idref" value="logoSmallIcon"/>
+	<imageIcon id="logoIcon" path="/images/logo.png"/>
+	<defaultsProperty key="System.logo" type="idref" value="logoIcon"/>
+	<!-- 主面板属性 -->
+  	<style id="mainPanel">
+  	  <!-- 主面板背景图片 -->
+	  <object class="com.bbtree.browser.swingext.ImageUIResource" id="backgrounImage">
+	    <string>/skin/default/images/bkg.jpg</string>
+	  </object>
+	  <!-- 主面板边框颜色 -->
+	  <object class="javax.swing.plaf.ColorUIResource" id="borderColor">
+		    <int>0</int>
+		    <int>0</int>
+		    <int>2</int>
+	  </object>
+	  <defaultsProperty key="MainPanel.background" type="idref" value="backgrounImage"/>
+	  <defaultsProperty key="MainPanel.borderColor" type="idref" value="borderColor"/>
+  	</style>
+  	<!-- window关闭按钮 -->
+  	<style id="windowCloseButton">
+      <state>
+	    <imagePainter method="buttonBackground" path="/images/btn_close_normal.png"
+	          sourceInsets="0 0 0 0" paintCenter="true"/>
+      </state>
+      <state value="MOUSE_OVER">    
+	    <imagePainter method="buttonBackground" path="/images/btn_close_highlight.png"
+	          sourceInsets="0 0 0 0" paintCenter="true" />
+      </state>
+      <state value="MOUSE_OVER PRESSED"> 
+	   <imagePainter method="buttonBackground" path="/images/btn_close_down.png"
+	           sourceInsets="0 0 0 0" paintCenter="true"/> 
+      </state>
+  </style>
+  <bind style="windowCloseButton" type="name" key="WindowCloseButton"/>
+  <!-- window最小 -->
+  <style id="windowMinButton">
+      <state>
+	    <imagePainter method="buttonBackground" path="/images/btn_mini_normal.png"
+	          sourceInsets="0 0 0 0" paintCenter="true"/>
+      </state>
+      <state value="MOUSE_OVER">    
+	    <imagePainter method="buttonBackground" path="/images/btn_mini_highlight.png"
+	          sourceInsets="0 0 0 0" paintCenter="true"/>
+      </state>
+      <state value="MOUSE_OVER PRESSED"> 
+	   <imagePainter method="buttonBackground" path="/images/btn_mini_down.png"
+	           sourceInsets="0 0 0 0" paintCenter="true"/> 
+      </state>
+  </style>
+  <bind style="windowMinButton" type="name" key="WindowMinButton"/>
+  <!-- window最大 -->
+  <style id="windowMaxButton">
+      <state>
+	    <imagePainter method="buttonBackground" path="/images/btn_max_normal.png"
+	          sourceInsets="0 0 0 0" paintCenter="true" />
+      </state>
+      <state value="MOUSE_OVER">    
+	    <imagePainter method="buttonBackground" path="/images/btn_max_highlight.png"
+	          sourceInsets="0 0 0 0" paintCenter="true" />
+      </state>
+      <state value="MOUSE_OVER PRESSED"> 
+	   <imagePainter method="buttonBackground" path="/images/btn_max_down.png"
+	           sourceInsets="0 0 0 0" paintCenter="true" /> 
+      </state>
+  </style>
+  <bind style="windowMaxButton" type="name" key="WindowMaxButton"/>
+    <!-- 换肤-->
+  <style id="windowSkinButton">
+      <state>
+	    <imagePainter method="buttonBackground" path="/images/Skin.png"
+	          sourceInsets="0 0 0 0" paintCenter="true" />
+      </state>
+      <state value="MOUSE_OVER">    
+	    <imagePainter method="buttonBackground" path="/images/SkinHover.png"
+	          sourceInsets="0 0 0 0" paintCenter="true" />
+      </state>
+      <state value="MOUSE_OVER PRESSED"> 
+	   <imagePainter method="buttonBackground" path="/images/Skin.png"
+	           sourceInsets="0 0 0 0" paintCenter="true"  stretch="true"/> 
+      </state>
+  </style>
+  <bind style="windowSkinButton" type="name" key="WindowSkinButton"/>
+</synth>

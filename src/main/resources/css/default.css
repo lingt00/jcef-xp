@@ -1,0 +1,43 @@
+#mainPane {
+	-fx-background-image: url("../images/bkg.jpg");
+}
+#logo {
+   -fx-background-image: url("../images/logo.png");
+}
+#title {
+   -fx-text-fill:white;
+}
+#logo{
+	-fx-background-image: url("../images/logo.png");
+}
+#window-close {
+	-fx-background-image: url("../images/btn_close_normal.png");
+	-fx-background-image-position : top;
+}
+#window-close:hover {
+	-fx-background-image: url("../images/btn_close_highlight.png");
+	-fx-background-image-position : top;
+}
+#window-close:pressed {
+	-fx-background-image: url("../images/btn_close_down.png");
+	-fx-background-image-position : top;
+}
+#window-max {
+	-fx-background-image: url("../images/btn_max_normal.png");
+	-fx-background-image-position : top;
+}
+#window-max:hover {
+	-fx-background-image: url("../images/btn_max_highlight.png");
+}
+#window-max:pressed {
+	-fx-background-image: url("../images/btn_max_down.png");
+}
+#window-min {
+	-fx-background-image: url("../images/btn_mini_normal.png");
+}
+#window-min:hover {
+	-fx-background-image: url("../images/btn_mini_highlight.png");
+}
+#window-min:pressed {
+	-fx-background-image: url("../images/btn_mini_down.png");
+}
